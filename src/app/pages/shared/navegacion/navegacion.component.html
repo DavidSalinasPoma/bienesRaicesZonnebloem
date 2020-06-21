@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg navbar-dark fondo animated fadeIn fast fixed-top p-4">
+
+  <div class="container-fluid logo-menu" id="">
+    <div *ngIf="this.imagen;else showImagen" class="animated fadeIn fast img-logo" id="">
+      <img class="img-fluid img-scroll " src="../../../../assets/img/logo.png" alt="">
+    </div>
+    <ng-template #showImagen>
+      <a class="navbar-brand  animated fadeIn fast logo-letra" href="#">BIENES<span>RAICES</span></a>
+    </ng-template>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <!-- INICIO -->
+        <li class="nav-item active" routerLinkActive="active">
+          <a (click)="this.inicio()" class="nav-link inicio " [routerLink]="[ '/home']">INICIO <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <!-- VENTAS -->
+        <li class="nav-item dropdown" routerLinkActive="active">
+          <a (click)="this.ventas()" class="nav-link dropdown-toggle ventas" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" [routerLink]="[ '/venta']">
+            VENTAS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Departamentos</a>
+            <a class="dropdown-item" href="#">Casas</a>
+            <a class="dropdown-item" href="#">Galpones</a>
+          </div>
+        </li>
+        <!-- ANTICRETICOS -->
+        <li class="nav-item dropdown" routerLinkActive="active">
+          <a (click)="this.anticreticos()" class="nav-link dropdown-toggle anticreticos " href="#" id="navbarDropdown"
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            [routerLink]="[ '/anticretico']">
+            ANTICRETICOS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Departamentos</a>
+            <a class="dropdown-item" href="#">Casas</a>
+            <a class="dropdown-item" href="#">Galpones</a>
+          </div>
+        </li>
+        <!-- ALQUILERES -->
+        <li class="nav-item dropdown" routerLinkActive="active">
+          <a (click)="this.alquileres()" class="nav-link dropdown-toggle alquileres" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" [routerLink]="[ '/alquiler']">
+            ALQUILERES
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item">Departamentos</a>
+            <a class="dropdown-item">Casas</a>
+            <a class="dropdown-item">Galpones</a>
+          </div>
+        </li>
+        <!-- NOSOTROS -->
+        <li class="nav-item" routerLinkActive="active">
+          <a (click)="this.nosotros()" class="nav-link nosotros" [routerLink]="[ '/nosotros']">NOSOTROS</a>
+        </li>
+        <!-- CONTACTOS -->
+        <li class="nav-item" routerLinkActive="active">
+          <a (click)="this.contactos()" class="nav-link contactos" [routerLink]="[ '/contacto']">CONTACTOS</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</nav>

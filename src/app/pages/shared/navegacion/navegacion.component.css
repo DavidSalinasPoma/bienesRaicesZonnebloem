@@ -1,0 +1,85 @@
+.logoTecSur {
+  width: 20rem;
+}
+
+.img-scroll {
+  width: 17rem;
+}
+
+.fondo {
+  background-color: #0707074f;
+  transition-duration: 0.6s;
+}
+
+.fondo2 {
+  background-color: #333333;
+  transition-duration: 0.6s;
+  padding: 15px !important;
+}
+
+div.logo-menu a.navbar-brand {
+  font-size: 1.2rem;
+  font-family: 'Libre Baskerville',
+    serif;
+  font-weight: lighter;
+}
+
+.img-logo {
+  width: 12rem;
+}
+
+@media (min-width: 575px) {
+
+  /* logica */
+  div.logo-menu a.navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  .img-logo {
+    width: 15rem;
+  }
+}
+
+@media (min-width: 768px) {
+  div.logo-menu a.navbar-brand {
+    font-size: 2rem;
+  }
+
+  .img-logo {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 992px) {
+  div.logo-menu a.navbar-brand {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.logo-menu a.navbar-brand {
+    font-size: 2.5rem;
+  }
+}
+
+div.logo-menu a.navbar-brand span {
+  font-weight: bold;
+}
+
+div.logo-menu div ul li a {
+  font-size: 1.2rem;
+  font-family: 'Oswald',
+    sans-serif
+}
+
+div.logo-menu div ul li a:hover {
+  /* color: #fe4918; */
+
+  border-bottom: 2px solid #fe4918;
+}
+
+/* Estilo de con typeScript */
+.linea-activada {
+  border-bottom: 2px solid #fe4918;
+  color: aliceblue;
+}
