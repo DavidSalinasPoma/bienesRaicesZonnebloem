@@ -19,10 +19,10 @@ export class NavegacionComponent implements OnInit {
   public x: any = fromEvent(document, 'scroll');
   public otherScroll = window.pageXOffset;
   public imagen: boolean;
-  public menu: boolean;
+  // public calefon: boolean;
 
   constructor() {
-    this.menu = true;
+    // this.calefon = false;
   }
 
   ngOnInit(): void {
@@ -41,7 +41,7 @@ export class NavegacionComponent implements OnInit {
         // scrollTop: 100
         // scrollWidth: 840
         const scroll = response.target.documentElement.scrollTop;
-        console.log(scroll);
+        // console.log(scroll);
         const navBarfondo = document.querySelector('nav.fondo');
 
         if (scroll >= 643) {
@@ -51,7 +51,6 @@ export class NavegacionComponent implements OnInit {
           navBarfondo.classList.remove('fondo2');
           this.imagen = false;
         }
-
       }
     );
   }
