@@ -1,0 +1,78 @@
+/** Contacto Home **/
+.imagen-contacto {
+  background-image: url('../../../assets/img/apartamento.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 22rem;
+  display: flex;
+  align-items: center;
+}
+
+.contenido-contacto {
+  /* flex: 0 0 95%; */
+  color: #ffffff;
+}
+
+.contenido-contacto h2 {
+  font-size: 2.5rem;
+  font-family: 'PT Sans', sans-serif;
+  color: aliceblue;
+}
+
+@media (min-width:768px) {
+
+  /* logica */
+  .contenido-contacto h2 {
+    font-size: 4rem;
+  }
+}
+
+.contenido-contacto p {
+  font-size: 1.2rem;
+}
+
+h3.titulo-venta {
+  border-bottom: 2px solid #fe4918;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  width: max-content;
+}
+
+.titulo-venta p {
+  font-size: 0.7rem;
+}
+
+/** fin Contacto Home **/
+
+/* Mapa del evento */
+.mapa {
+  height: 400px;
+}
+
+.img-tam {
+  width: 100px;
+}
+
+/* Fin Mapa del evento */
+
+
+/* Agentes */
+.nombre-agente {
+  font-weight: lighter;
+}
+
+.principal .agente {
+  border: none;
+  background-color: transparent;
+}
+
+.contenido-anuncio div a i {
+  font-size: 2.2rem;
+}
+
+.contenido-anuncio div a:hover {
+  color: #fe4918;
+  cursor: pointer;
+}
+
+/* Fin Agentes */

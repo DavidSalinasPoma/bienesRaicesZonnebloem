@@ -1,0 +1,75 @@
+/** Contacto Home **/
+.imagen-contacto {
+  background-image: url('../../../assets/img/llave.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 22rem;
+  display: flex;
+  align-items: center;
+}
+
+.contenido-contacto {
+  /* flex: 0 0 95%; */
+  color: #ffffff;
+}
+
+.contenido-contacto h2 {
+  font-size: 2.5rem;
+  font-family: 'PT Sans', sans-serif;
+  color: aliceblue;
+  text-shadow: 0 0 30px black !important;
+}
+
+@media (min-width:768px) {
+
+  /* logica */
+  .contenido-contacto h2 {
+    font-size: 3rem;
+  }
+}
+
+.contenido-contacto p {
+  font-size: 1.2rem;
+}
+
+h3.titulo-venta {
+  border-bottom: 2px solid #fe4918;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  width: max-content;
+}
+
+.titulo-venta p {
+  font-size: 0.7rem;
+}
+
+.form-group label {
+  font-family: 'Open Sans',
+    sans-serif;
+  font-weight: 600;
+}
+
+legend {
+  font-family: 'PT Sans',
+    sans-serif;
+}
+
+.contacto-header p i {
+  color: #fe4918;
+}
+
+.contacto-header p {
+  font-size: 1rem;
+}
+
+/* Mapa del evento */
+.mapa {
+  height: 200px;
+}
+
+form button {
+  font-family: 'Oswald',
+    sans-serif;
+}
+
+/** fin Contacto Home **/

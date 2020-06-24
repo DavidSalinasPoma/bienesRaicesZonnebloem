@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
         // scrollTop: 100
         // scrollWidth: 840
         const scroll = response.target.documentElement.scrollTop;
-        console.log(scroll);
+        // console.log(scroll);
         // const navBarfondo = document.querySelector('nav.fondo');
 
         // if (scroll >= 643) {

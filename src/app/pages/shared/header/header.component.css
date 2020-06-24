@@ -1,14 +1,40 @@
 /* Hero */
 .hero {
-  background-image: url('../../../../assets/img/header.jpg');
+  /* background-image: url('../../../../assets/img/header.jpg'); */
   background-position: center;
   background-size: cover;
   height: 100vh;
   min-height: 40rem;
+  animation: hero 12s infinite;
+  animation-direction: alternate;
+}
+
+.degradado {
+  background-color: rgba(0, 0, 0, 0.555);
+  height: 100vh;
+  min-height: 40rem;
+}
+
+@keyframes hero {
+
+  0%,
+  30% {
+    background-image: url('../../../../assets/img/casa2.jpg');
+  }
+
+  35%,
+  65% {
+    background-image: url('../../../../assets/img/casa33.jpg');
+  }
+
+  70%,
+  100% {
+    background-image: url('../../../../assets/img/casa11.jpg');
+  }
 }
 
 .redes-sociales {
-  margin-top: 7rem;
+  margin-top: 0rem;
 }
 
 .redes-sociales div ul li a i {
@@ -22,16 +48,52 @@
   color: #fe4918 !important;
 }
 
+.contacto-header {
+  margin-top: 150px;
+  color: rgba(231, 243, 253, 0.959);
+}
+
+.contacto-header p i {
+  color: #fe4918;
+}
+
+.contacto-header h4 {
+  width: max-content;
+  border-bottom: 2px solid #fe4918;
+}
+
 .logo-empresa {
-  height: 690px;
+  /* height: 550px; */
+  margin-top: 120px;
 }
 
-.logo-empresa img {
-  padding-top: 2rem;
-  width: 800px;
+@media (min-width: 992px) {
+
+  /* logica */
+  .logo-empresa {
+    margin-top: 150px;
+  }
 }
 
-.logo-empresa p {
+
+.img-empresa img {
+  padding-top: 1.5rem;
+  width: 150px;
+}
+
+.img-empresa-padre h1 {
+  font-family: 'PT Sans',
+    sans-serif;
+  font-weight: bold;
+  color: #f8f9fa;
+  font-size: 6.5rem;
+  text-shadow: 1px 1px 2px rgba(19, 18, 19, 0.87);
+  /* padding-right: 70px; */
+  text-align: center;
+  z-index: 100;
+}
+
+.title-empresa p {
   font-size: 2rem;
   color: aliceblue;
   font-family: 'Oswald',
