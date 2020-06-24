@@ -24,6 +24,7 @@ export class ContactoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     this.mapaBienesRaices();
   }
 

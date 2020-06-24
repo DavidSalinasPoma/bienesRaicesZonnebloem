@@ -1,0 +1,133 @@
+/* Carrusel de imagenes */
+h3.titulo-venta {
+  border-bottom: 2px solid #fe4918;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.carousel-indicators li {
+  width: 200px !important;
+  height: initial !important;
+}
+
+.fotos-carrusel {
+  position: initial !important;
+}
+
+.position-padre {
+  position: relative;
+}
+
+.position-hijo {
+  z-index: 500;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.position-hijo h2 {
+  color: white !important;
+  font-size: 1.8rem;
+  text-shadow: 1px 2px 1px black !important;
+  margin-bottom: 0;
+}
+
+.position-hijo p.precio {
+  font-size: 0.7rem;
+  color: white !important;
+  margin-bottom: 0px;
+
+}
+
+.dolares {
+  font-size: 0.8rem;
+  color: white !important;
+}
+
+@media (min-width: 768px) {
+
+  /* logica */
+  .position-hijo h2 {
+    font-size: 3rem;
+  }
+
+  .position-hijo p.precio {
+    font-size: 1.5rem;
+  }
+
+  .dolares {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Fin carrusel de imagenes */
+
+/* Formulario de contacto */
+.form-group label {
+  font-family: 'Open Sans',
+    sans-serif;
+  font-weight: 600;
+}
+
+form button {
+  font-family: 'Oswald',
+    sans-serif;
+}
+
+.form-borde {
+  border: 1px solid rgba(148, 147, 147, 0.589);
+  padding: 20px;
+  transition: all .3 ease;
+}
+
+.form-borde:hover {
+  border: 1px solid #fe4918;
+  box-shadow: 0px 0px 10px rgba(102, 102, 102, 0.308)
+}
+
+/* Fin formulario de contacto */
+
+/* Seccion detalles del inmueble */
+h4.titulo-detalles {
+  border-bottom: 2px solid #fe4918;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  width: max-content;
+}
+
+.lista-detalles {
+  padding: 3px 0 3px 10px;
+}
+
+.lista-detalles li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.descripcion p {
+  font-size: 1rem;
+}
+
+/* FinSeccion detalles del inmueble */
+
+
+/* Fin Seccion contacto agente de ventas */
+legend {
+  font-family: 'PT Sans',
+    sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contacto-header p i {
+  color: #fe4918;
+}
+
+.contacto-header p {
+  font-size: 1rem;
+}
+
+/* Seccion contacto agente de ventas */

@@ -18,6 +18,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { VertodosComponent } from './vertodos/vertodos.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { VercategoriaComponent } from './vercategoria/vercategoria.component';
+import { VerpropiedadComponent } from './verpropiedad/verpropiedad.component';
 
 
 
@@ -32,6 +33,7 @@ import { VercategoriaComponent } from './vercategoria/vercategoria.component';
     VertodosComponent,
     HeaderComponent,
     VercategoriaComponent,
+    VerpropiedadComponent,
 
   ],
   exports: [

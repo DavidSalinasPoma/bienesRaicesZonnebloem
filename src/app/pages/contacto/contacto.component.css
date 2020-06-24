@@ -14,7 +14,7 @@
 }
 
 .contenido-contacto h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'PT Sans', sans-serif;
   color: aliceblue;
   text-shadow: 0 0 30px black !important;
@@ -62,7 +62,9 @@ legend {
   font-size: 1rem;
 }
 
-/* Mapa del evento */
+/** fin Contacto Home **/
+
+/* seccion mapa Mapa del evento */
 .mapa {
   height: 200px;
 }
@@ -72,4 +74,4 @@ form button {
     sans-serif;
 }
 
-/** fin Contacto Home **/
+/* Fin seccion mapa */

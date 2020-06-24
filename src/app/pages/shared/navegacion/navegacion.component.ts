@@ -64,6 +64,10 @@ export class NavegacionComponent implements OnInit {
         this.inicio();
         this.nosotrosMenu();
         break;
+      case '/verpropiedad':
+        this.inicio();
+        this.nosotrosMenu();
+        break;
       case '/contacto':
         this.contactos();
         this.nosotrosMenu();
