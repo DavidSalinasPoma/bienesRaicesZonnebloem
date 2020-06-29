@@ -1,0 +1,41 @@
+Datos de prueba para la tabla Usuarios
+
+//Pass y user de los usuarios del sistema
+{"userpass":"admin","password":"admin"}
+
+// Datos de los agentes
+{"carnet":"6406766","nombres":"David","apellidos":"Salinas Poma","imagen":"david.jpg","email":"dsp_lev@hotmail.com","userpass":"admin","password":"admin","perfil":"administrador"}
+
+
+// Datos para los calefones
+{"titulo":"Calefones de Nuevos","descripcion":"Nuevos recomendados por zonnebloem","precio":"2500","imagen":"calefon1.jpg","usuarios_id":"1"}
+
+// Datos categoria Bienes Raices
+{"nombre_categoria":"Galpones","usuarios_id":"4"}
+
+// Datos de la empresa
+{
+	"titulo":"Venta de Casas y Departamentos Exclusivos de Lujo",
+	"direccion":"Calle Mexico Nro. 0169 entre Baptista y Ayacucho.",
+	"correo_electronico":"zonnebloempaulusbakker@gmail.com",
+	"facebook":"davidsp",
+	"twitter":"davidsp",
+	"youtube":"davidsp",
+	"whatsapp":"76931047",
+	"img_historia":"historia.jpg",
+	"descripcion_historia":"alñsjdflaslaslfñklasfhlaskf",
+	"mision":"asfsfsadgsdfvc xvsdzvscvsd",
+	"vision":"asdasfasdsdasdfascasdasdassdasd",
+	"latitud":"454654",
+	"longitud":"5245343",	
+}
+{"titulo":"Venta de Casas y Departamentos Exclusivos de Lujo",	"direccion":"Calle Mexico Nro. 0169 entre Baptista y Ayacucho.","correo_electronico":"zonnebloempaulusbakker@gmail.com","facebook":"davidsp","twitter":"davidsp","youtube":"davidsp","whatsapp":"76931047","img_historia":"historia.jpg","descripcion_historia":"alñsjdflaslaslfñklasfhlaskf","mision":"asfsfsadgsdfvc xvsdzvscvsd",
+	"vision":"asdasfasdsdasdfascasdasdassdasd"
+	"latitud":"454654",
+	"longitud":"5245343",	
+}
+
+// comandos angular
+ng g m admin --routing //para crear un modulo con un routing
+
+ng g c admin/
