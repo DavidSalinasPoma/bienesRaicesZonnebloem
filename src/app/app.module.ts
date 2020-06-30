@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './pages/shared/footer/footer.component';
 import { AssideComponent } from './pages/shared/asside/asside.component';
 import { NavegacionComponent } from './pages/shared/navegacion/navegacion.component';
+import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './admin/login/login.component';
 
 
 
@@ -20,6 +22,8 @@ import { NavegacionComponent } from './pages/shared/navegacion/navegacion.compon
     NavegacionComponent,
     FooterComponent,
     AssideComponent,
+    AdminComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

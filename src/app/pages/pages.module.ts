@@ -5,9 +5,6 @@ import { CommonModule } from '@angular/common';
 // Ruta principal del proyecto
 import { RouterModule } from '@angular/router';
 
-
-
-
 // Componentes de las ppaginas
 import { HomeComponent } from './home/home.component';
 import { VentaComponent } from './venta/venta.component';

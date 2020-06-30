@@ -11,6 +11,9 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { VertodosComponent } from './pages/vertodos/vertodos.component';
 import { VercategoriaComponent } from './pages/vercategoria/vercategoria.component';
 import { VerpropiedadComponent } from './pages/verpropiedad/verpropiedad.component';
+import { AdminComponent } from './admin/admin.component';
+import { adminRoutes } from './admin/admin-routing.module';
+
 
 
 const routes: Routes = [
@@ -24,6 +27,11 @@ const routes: Routes = [
   { path: 'vertodas', component: VertodosComponent },
   { path: 'vercategorias', component: VercategoriaComponent },
   { path: 'verpropiedad', component: VerpropiedadComponent },
+
+  // Rutas Hijas
+  { path: 'admin', component: AdminComponent, children: adminRoutes },
+
+
   { path: '**', component: HomeComponent }, // Cuando me equivoco de escribir la ruta.
 ];
 
