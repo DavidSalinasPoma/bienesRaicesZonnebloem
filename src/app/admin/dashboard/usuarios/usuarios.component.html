@@ -1,0 +1,192 @@
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+   <!-- Content Header (Page header) -->
+   <section class="content-header">
+     <div class="container-fluid">
+       <div class="row mb-2">
+         <div class="col-sm-6">
+           <h1>Admistrador de agentes</h1>
+         </div>
+         <div class="col-sm-6">
+           <ol class="breadcrumb float-sm-right">
+             <li class="breadcrumb-item"><a href="#">Agentes</a></li>
+             <li class="breadcrumb-item active">Agregar</li>
+           </ol>
+         </div>
+       </div>
+     </div><!-- /.container-fluid -->
+   </section>
+
+   <!-- Main content -->
+   <!-- Main content -->
+   <section class="content">
+     <div class="container-fluid">
+       <div class="row">
+         <!-- left column -->
+         <div class="col-12">
+           <!-- general form elements -->
+           <div class="card card-primary">
+             <div class="card-header">
+               <p class="card-title text-white mb-0">Formulario de registro</p>
+             </div>
+             <!-- form start -->
+             <form [formGroup]="this.formulario" (submit)="this.onSubmit()" novalidate>
+               <div class="card-body">
+                 <div class="row" id="">
+
+                   <div class="col-md-5" id="">
+
+                     <div class="form-group">
+                       <label for="exampleInputEmail1">Carnet</label>
+                       <input type="text" class="form-control" id="carnet" placeholder="Ingrese el nro. carnet"
+                         formControlName="carnet">
+                       <!-- Validacion -->
+                       <!-- Preguntamos si es invalido y si esta sucio o a sido tocado -->
+                       <div *ngIf="this.carnet.invalid && (this.carnet.dirty || this.carnet.touched)" class="" id="">
+                         <!-- Aqui el error q dijimos en la clase -->
+                         <div *ngIf="this.carnet.errors.required" class="animated fadeIn fast text-danger" id="">
+                           El carnet es requerido.
+                         </div>
+                         <div *ngIf="this.carnet.errors.maxlength" class="animated fadeIn fast text-danger" id="">
+                           El carnet debe tener maximo 12 caracteres.
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="form-group">
+                       <label for="exampleInputPassword1">Nombres</label>
+                       <input type="text" class="form-control" id="nombres" placeholder="Nombre completo"
+                         formControlName="nombres">
+                       <!-- Validacion -->
+                       <!-- Preguntamos si es invalido y si esta sucio o a sido tocado -->
+                       <div *ngIf="this.nombres.invalid && (this.nombres.dirty || this.nombres.touched)">
+
+                         <!-- Errores con expresiones regulares -->
+                         <div *ngIf="this.nombres.hasError('pattern')" class="animated fadeIn fast text-danger" id="">
+                           El campo debe contener solo letras.
+                         </div>
+                         <!-- Errores con expresiones regulares -->
+                         <div *ngIf="this.nombres.hasError('maxlength')" class="animated fadeIn fast text-danger" id="">
+                           El nombre debe contener maximo 50 caracteres.
+                         </div>
+                         <!-- Errores con expresiones regulares -->
+                         <div *ngIf="this.nombres.hasError('required')" class="animated fadeIn fast text-danger" id="">
+                           El nombre es requerido.
+                         </div>
+
+                       </div>
+                     </div>
+
+                     <div class="form-group">
+                       <label for="exampleInputEmail1">Email</label>
+                       <input type="email" class="form-control" id="email" placeholder="E-mail" formControlName="email">
+                       <!-- Validacion -->
+                       <!-- Preguntamos si es invalido y si esta sucio o a sido tocado -->
+                       <div *ngIf="this.email.invalid && (this.email.dirty || this.email.touched)">
+
+                         <!-- Errores con expresiones regulares -->
+                         <div *ngIf="this.email.hasError('pattern')" class="animated fadeIn fast text-danger" id="">
+                           Email incorrecto.
+                         </div>
+
+                         <!-- Mostra errores personalizados -->
+                         <div *ngIf="this.email.errors.required" class="animated fadeIn fast text-danger" id="">
+                           El email es requerido.
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="form-group">
+                       <label for="exampleInputEmail1">Perfil</label>
+                       <input type="text" class="form-control" id="perfil" placeholder="perfil"
+                         formControlName="perfil">
+                       <!-- Validaciones -->
+                       <div *ngIf="this.perfil.invalid && (this.perfil.dirty || this.perfil.touched)">
+                         <!-- Errores con expresiones regulares -->
+                         <div *ngIf="this.perfil.hasError('required')" class="animated fadeIn fast text-danger" id="">
+                           El Perfil es requerido.
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="form-group">
+                       <label for="exampleInputEmail1">Usuario</label>
+                       <input type="text" class="form-control" id="usuario" placeholder="usuario"
+                         formControlName="usuario">
+                       <!-- Validaciones -->
+                       <div *ngIf="this.usuario.invalid && (this.usuario.dirty || this.usuario.touched)">
+                         <!-- Errores con expresiones regulares -->
+                         <div *ngIf="this.usuario.hasError('required')" class="animated fadeIn fast text-danger" id="">
+                           El Perfil es requerido.
+                         </div>
+                       </div>
+                     </div>
+
+
+                     <div class="form-group">
+                       <label for="exampleInputPassword1">Password</label>
+                       <input type="password" class="form-control" id="password" placeholder="Password"
+                         formControlName="password">
+                       <!-- Validacion -->
+                       <!-- Preguntamos si es invalido y si esta sucio o a sido tocado -->
+                       <div *ngIf="this.password.invalid && (this.password.dirty || this.password.touched)" class=""
+                         id="">
+                         <!-- Aqui el error q dijimos en la clase -->
+                         <div *ngIf="this.password.errors.required" class="animated fadeIn fast text-danger" id="">
+                           El password es requerido.
+                         </div>
+                         <div *ngIf="this.password.errors.minlength" class="animated fadeIn fast text-danger" id="">
+                           La contraseña debe tener al menos 8 caracteres.
+                         </div>
+                         <!-- Mostra errores personalizados -->
+                         <div *ngIf="this.password.errors.appPasswordValidation"
+                           class="animated fadeIn fast text-color-danger" id="">
+                           {{ password.errors.appPasswordValidation.message }}
+                         </div>
+
+                       </div>
+                     </div>
+
+                   </div>
+
+                   <div class="col-md-7" id="">
+                     <div class="row" id="">
+                       <div class="col-md-8 col-lg-6" id="">
+                         <div class="form-group" id="">
+                           <label for="exampleInputPassword1">Ingrese una imagen para el Agente</label>
+                           <div class=" imagen_user" style="cursor: pointer;">
+                             <!-- El input con el img se relaciona con la photo #photoInput -->
+                             <input type="file" class="d-none" id="Imagen" placeholder="Imagen" formControlName="imagen"
+                               (change)="this.onPhotoSelected($event)" #photoInput>
+                             <!-- Si existe una imagen selecionada(photoselected) sino no-imagen.png-->
+                             <img class="img-fluid" [src]="photoSelected ||'../../../../assets/img/no-image.png'"
+                               alt="No image" (click)="photoInput.click()">
+                             <!-- Validando el peso de la imagen -->
+                             <div *ngIf="this.tamImage" class="animated fadeIn fast text-color-danger" id="">
+                               La imagen no debe ser mayor a 9Mb.
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <!-- /.card-body -->
+
+                 <div class="card-footer pl-2">
+                   <button type="submit" class="btn btn-success" [disabled]="this.formulario.invalid">Agregar</button>
+                 </div>
+               </div>
+             </form>
+           </div>
+         </div>
+
+
+       </div>
+     </div>
+   </section>
+   <!-- /.card-header -->
+   <!-- form start -->
+   <!-- /.content -->
+ </div>
+ <!-- /.content-wrapper -->

@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~font-awesome/css/font-awesome.css';
 @import '~leaflet/dist/leaflet.css';
+@import '~ngx-toastr/toastr';
 
 html {
   box-sizing: border-box;
@@ -352,6 +353,11 @@ div.container-redes a:hover img {
 
 /* FIN Iconos whatsapp y messenger */
 
-/* fin para las tarjetas de ventas */
+/* Panel de control */
+.panel-p {
+  font-size: 0.9rem;
+}
+
+/* Fin Panel de control */
 
 /* FIN Estilos globales */

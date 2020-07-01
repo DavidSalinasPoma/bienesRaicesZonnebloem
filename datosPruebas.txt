@@ -39,3 +39,5 @@ Datos de prueba para la tabla Usuarios
 ng g m admin --routing //para crear un modulo con un routing
 
 ng g c admin/
+
+ng generate module app-routing --flat --module=app // este crea solo un archivo
